@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="member/eventList.jsp" x="502" y="587" zoom="true"/>
+        <Node id="index.jsp" x="856" y="28" zoom="true"/>
+        <Node id="error/throwable.jsp" x="95" y="164" zoom="true"/>
+        <Node id="member/genreEdit.jsp" x="517" y="444" zoom="true"/>
+        <Node id="member/bandAdd.jsp" x="203" y="731" zoom="true"/>
+        <Node id="eventList.jsp" x="1046" y="102" zoom="true"/>
+        <Node id="member/header.jsp" x="106" y="128" zoom="true"/>
+        <Node id="member/musicianEdit.jsp" x="789" y="652" zoom="true"/>
+        <Node id="logout.jsp" x="150" y="150" zoom="true"/>
+        <Node id="member/genreList.jsp" x="613" y="381" zoom="true"/>
+        <Node id="member/eventAdd.jsp" x="522" y="724" zoom="true"/>
+        <Node id="common/footer.jsp" x="112" y="89" zoom="true"/>
+        <Node id="login/login.jsp" x="126" y="326" zoom="true"/>
+        <Node id="bandList.jsp" x="692" y="91" zoom="true"/>
+        <Node id="member/musicianAdd.jsp" x="861" y="705" zoom="true"/>
+        <Node id="common/header.jsp" x="136" y="60" zoom="true"/>
+        <Node id="redirect.jsp" x="144" y="31" zoom="true"/>
+        <Node id="member/musicianList.jsp" x="838" y="583" zoom="true"/>
+        <Node id="error/http404.jsp" x="284" y="207" zoom="true"/>
+        <Node id="login/form.jsp" x="98" y="247" zoom="true"/>
+        <Node id="member/genreAdd.jsp" x="638" y="495" zoom="true"/>
+        <Node id="common/headerCore.jsp" x="497" y="-37" zoom="true"/>
+        <Node id="member/index.jsp" x="863" y="247" zoom="true"/>
+        <Node id="member/bandList.jsp" x="150" y="584" zoom="true"/>
+        <Node id="login/error.jsp" x="95" y="285" zoom="true"/>
+        <Node id="member/eventEdit.jsp" x="432" y="659" zoom="true"/>
+        <Node id="member/bandEdit.jsp" x="92" y="669" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

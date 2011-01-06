@@ -1,0 +1,69 @@
+/**
+ * Typographic theme
+ */
+/* - general settings */
+.theme1 { font-size: 14px; font-family: Cambria, Georgia, 'New York CE', utopia, serif; line-height: 1.6em; letter-spacing: 0.03em; }
+.theme1 p, .theme1 table, .theme1 blockquote, .theme1 ul, .theme1 ol
+    { margin: 0 0 1em 0; }
+.theme1 p { text-indent: 2em; }
+
+/* - headings */
+.theme1 h1, .theme1 h2, .theme1 h3, .theme1 h4, .theme1 h5
+    { line-height: 1.3em; margin: 0 0 0.15em 0; }
+    .theme1 h1 { font-size: 250%; letter-spacing: -0.0em; }
+    .theme1 h2 { font-size: 180%; font-weight: bold; letter-spacing: -0.0em; }
+    .theme1 h3 { font-size: 150%; font-weight: bold; letter-spacing: -0.0em; }
+    .theme1 h4 { font-size: 110%; font-weight: bold; letter-spacing: -0.0em; }
+    .theme1 h5 { font-size: 110%; font-weight: bold; letter-spacing: -0.0em; }
+
+/* - lists */
+.theme1 ul, .theme1 ol { margin-left: 2em; }
+    .theme1 ul ul, .theme1 ol ol { margin-left: 1.8em;  }
+    .theme1 ul { list-style: disc; }
+    .theme1 ul ul { list-style: circle; }
+    .theme1 ol { list-style: decimal; }
+    .theme1 ol ol { list-style: lower-alpha; }
+
+    .theme1 dl { margin-left: 0.5em; }
+    .theme1 dl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } /* clearfix */
+    * html .theme1 dl { height: 1%; } /* clearfix */
+    .theme1 dt { width: 100px; float: left; clear: left; padding: 0 7px 0 0; text-align: left; }
+    .theme1 dd { float: left; width: auto;  }
+    .theme1 dt+dd+dt, .theme1 dd+dt+dd  { border-top: 2px solid #e2e2e2;  }
+
+/* - tables */
+.theme1 table {  }
+    .theme1 table caption { font-size: 110%; font-weight: bold; letter-spacing: -0.0em; margin: 0 0 0.15em 0; }
+    .theme1 table th, .theme1 table td { color: #333333; padding: 0.5em 0.7em; }
+    .theme1 table thead th { background-color: #D2EAF1; border-top: 1px solid #4BACC6; border-bottom: 1px solid #4BACC6; font-weight: bold; }
+    .theme1 table td { border-bottom: 1px solid #4BACC6; }
+    .theme1 table tr.odd td { background-color: #E9F0F2; }
+
+/* - images */
+.theme1 img { margin: 10px 0 10px 20px; }
+    .theme1 img.right { float: right; }
+    .theme1 img.left { float: left; }
+
+/* - forms */
+.theme1 form { }
+    .theme1 fieldset { clear: left; border: 4px dashed #D0D5DD; -moz-border-radius: 10px; -webkit-border-radius: 10px; padding: 0px 30px 30px; }
+    .theme1 legend { font-size: 22px; font-weight: bold; color: #333333; }
+    .theme1 label { width: 100px; float: left; clear: left; margin-top: 3px; margin-right: 10px;  font-weight: bold; color: #333; }
+    .theme1 input { width: 300px; float: left; padding: 5px; margin-top: 5px;}
+    .theme1 select { width: auto; float: left; padding: 5px; margin-top: 7px;}
+    .theme1 textarea { width: 300px; height: 100px; float: left; font-family: sans-serif; padding: 5px; margin-top: 5px;}
+    .theme1 input[type=file] { font-size: 1em; }
+    .theme1 input[type=submit], .theme1 input.submit, .theme1 input[type=reset], .theme1 input.reset { width: auto; padding: 0.5em 2em; margin-top: 0.5em; }
+
+/* - links */
+.theme1 a { color: #0056B7; }
+.theme1 a:hover { text-decoration: none; }
+.theme1 a:after { content:" ("attr(href)")"; }
+
+.theme1 a[href^=http], .theme1 a.http { background: url('../img/icons/link-external.png') no-repeat center right; padding-right: 15px; }
+.theme1 a[href^=mailto], .theme1 a.mailto { background: url('../img/icons/email.png') no-repeat center right; padding-right: 23px; }
+
+/* Error and notice message boxes */
+.theme1 .error, .theme1 .notice { width: auto; padding: 10px; margin: 3px 0; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+.theme1 .error { background-color: #FCDFDC; border: 1px solid #E0AEA9; }
+.theme1 .notice { background-color: #E4FCDC; border: 1px solid #B1E0A9; }

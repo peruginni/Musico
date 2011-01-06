@@ -1,0 +1,69 @@
+/**
+ * Typographic theme
+ */
+/* - general settings */
+.theme { font-size: 14px; font-family: Calibri, "Trebuchet MS", sans-serif; line-height: 1.6em; }
+.theme p, .theme table, .theme blockquote, .theme ul, .theme ol
+    { margin: 0 0 1em 0; }
+
+/* - headings */
+.theme h1, .theme h2, .theme h3, .theme h4, .theme h5
+    { line-height: 1.3em; margin: 0 0 0.15em 0; }
+    .theme h1 { font-size: 250%; letter-spacing: -0.04em; }
+    .theme h2 { font-size: 180%; font-weight: bold; letter-spacing: -0.04em; }
+    .theme h3 { font-size: 150%; font-weight: bold; letter-spacing: -0.03em; }
+    .theme h4 { font-size: 110%; font-weight: bold; letter-spacing: -0.0em; }
+    .theme h5 { font-size: 110%; font-weight: bold; letter-spacing: -0.0em; }
+
+/* - lists */
+.theme ul, .theme ol { margin-left: 2em; }
+    .theme ul ul, .theme ol ol { margin-left: 1.8em;  }
+    .theme ul { list-style: disc; }
+    .theme ul ul { list-style: circle; }
+    .theme ol { list-style: decimal; }
+    .theme ol ol { list-style: lower-alpha; }
+
+    .theme dl { margin-left: 0.5em; }
+    .theme dl:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } /* clearfix */
+    * html .theme dl { height: 1%; } /* clearfix */
+    .theme dt { width: 100px; float: left; clear: left; padding: 0 7px 0 0; text-align: left; }
+    .theme dd { float: left; width: auto; }
+    .theme dt+dd+dt, .theme dd+dt+dd  { border-top: 2px solid #e2e2e2;  }
+
+/* - tables */
+.theme table {  }
+    .theme table caption { font-size: 110%; font-weight: bold; letter-spacing: -0.0em; margin: 0 0 0.15em 0; }
+    .theme table th, .theme table td { color: #333333; padding: 0.5em 0.7em; }
+    .theme table thead th { background-color: #D2EAF1; border-top: 1px solid #4BACC6; border-bottom: 1px solid #4BACC6; font-weight: bold; }
+    .theme table td { border-bottom: 1px solid #4BACC6; }
+    .theme table tr.odd td { background-color: #E9F0F2; }
+
+/* - images */
+.theme img { margin: 10px 0 10px 20px; }
+    .theme img.right { float: right; }
+    .theme img.left { float: left; }
+
+/* - forms */
+.theme form { }
+    .theme fieldset { clear: left; border: 4px dashed #D0D5DD; -moz-border-radius: 10px; -webkit-border-radius: 10px; padding: 0px 30px 30px; }
+    .theme legend { font-size: 22px; font-weight: bold; color: #333333; }
+    .theme label { width: 130px; float: left; clear: left; margin-top: 3px; margin-right: 10px;  font-weight: bold; color: #333; }
+    .theme input { width: 300px; float: left; padding: 5px; margin-top: 5px;}
+    .theme select { width: auto; float: left; padding: 5px; margin-top: 7px;}
+    .theme select.dropdown { height: 100px; }
+    .theme textarea { width: 300px; height: 100px; float: left; font-family: sans-serif; padding: 5px; margin-top: 5px;}
+    .theme input[type=file] { font-size: 1em; }
+    .theme input[type=submit], .theme input.submit, .theme input[type=reset], .theme input.reset { width: auto; padding: 0.5em 2em; margin-top: 0.5em; }
+
+/* - links */
+.theme a { color: #0056B7; }
+.theme a:hover { text-decoration: none; }
+
+.theme a[href^=http], .theme a.http { background: url('../img/icons/link-external.png') no-repeat center right; padding-right: 15px; }
+.theme a[href^=mailto], .theme a.mailto { background: url('../img/icons/email.png') no-repeat center right; padding-right: 23px; }
+
+/* Error and notice message boxes */
+.theme .error, .theme .notice { width: auto; padding: 10px; margin: 3px 0; -moz-border-radius: 3px; -webkit-border-radius: 3px; list-style: none; }
+.theme .error { background-color: #FCDFDC; border: 1px solid #E0AEA9; }
+.theme .notice { background-color: #E4FCDC; border: 1px solid #B1E0A9; }
+

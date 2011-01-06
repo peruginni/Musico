@@ -1,0 +1,27 @@
+/* Load basic components */
+@import url('basic.reset.css');
+@import url('basic.helpers.css');
+
+/* Load typographic theme */
+@import url('basic.theme.print.css');
+
+/* ============================================================================
+ == LAYOUT =====
+ =========================================================================== */
+
+/* Top wrappers */
+body { }
+#page { }
+
+/* Header */
+#header { }
+
+/* Navigation */
+#navigation { display: none; }
+
+/* Content */
+#content { }
+
+/* Footer */
+#footer {  }
+

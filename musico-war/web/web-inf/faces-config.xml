@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!-- =========== FULL CONFIGURATION FILE ================================== -->
+
+<faces-config version="1.2" 
+    xmlns="http://java.sun.com/xml/ns/javaee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
+        <application>
+                <locale-config>
+                        <default-locale>cs</default-locale>
+                        <supported-locale>en</supported-locale>
+                        <supported-locale>cs</supported-locale>
+                </locale-config>
+                <resource-bundle>
+                        <base-name>cz.cvut.x33eja.macosond.web.resources.messages</base-name>
+                        <var>msg</var>
+                </resource-bundle>
+                <resource-bundle>
+                        <base-name>cz.cvut.x33eja.macosond.web.resources.titles</base-name>
+                        <var>title</var>
+                </resource-bundle>
+                <resource-bundle>
+                        <base-name>cz.cvut.x33eja.macosond.web.resources.errors</base-name>
+                        <var>error</var>
+                </resource-bundle>
+        </application>
+
+
+
+    <converter>
+        <converter-id>bandConverter</converter-id>
+        <converter-class>cz.cvut.x33eja.macosond.web.converter.BandConverter</converter-class>
+    </converter>
+
+    <converter>
+        <converter-id>eventConverter</converter-id>
+        <converter-class>cz.cvut.x33eja.macosond.web.converter.EventConverter</converter-class>
+    </converter>
+
+    <converter>
+        <converter-id>genreConverter</converter-id>
+        <converter-class>cz.cvut.x33eja.macosond.web.converter.GenreConverter</converter-class>
+    </converter>
+
+    <converter>
+        <converter-id>musicianConverter</converter-id>
+        <converter-class>cz.cvut.x33eja.macosond.web.converter.MusicianConverter</converter-class>
+    </converter>
+
+    <converter>
+        <converter-id>abilityConverter</converter-id>
+        <converter-class>cz.cvut.x33eja.macosond.web.converter.AbilityConverter</converter-class>
+    </converter>
+
+        <managed-bean>
+                <managed-bean-name>localeBack</managed-bean-name>
+                <managed-bean-class>cz.cvut.x33eja.macosond.web.back.LocaleBack</managed-bean-class>
+                <managed-bean-scope>session</managed-bean-scope>
+        </managed-bean>
+
+        <managed-bean>
+                <managed-bean-name>bandBack</managed-bean-name>
+                <managed-bean-class>cz.cvut.x33eja.macosond.web.back.BandBack</managed-bean-class>
+                <managed-bean-scope>request</managed-bean-scope>
+        </managed-bean>
+
+        <managed-bean>
+                <managed-bean-name>eventBack</managed-bean-name>
+                <managed-bean-class>cz.cvut.x33eja.macosond.web.back.EventBack</managed-bean-class>
+                <managed-bean-scope>request</managed-bean-scope>
+        </managed-bean>
+
+        <managed-bean>
+                <managed-bean-name>genreBack</managed-bean-name>
+                <managed-bean-class>cz.cvut.x33eja.macosond.web.back.GenreBack</managed-bean-class>
+                <managed-bean-scope>request</managed-bean-scope>
+        </managed-bean>
+
+        <managed-bean>
+                <managed-bean-name>musicianBack</managed-bean-name>
+                <managed-bean-class>cz.cvut.x33eja.macosond.web.back.MusicianBack</managed-bean-class>
+                <managed-bean-scope>request</managed-bean-scope>
+        </managed-bean>
+
+        <managed-bean>
+                <managed-bean-name>abilityBack</managed-bean-name>
+                <managed-bean-class>cz.cvut.x33eja.macosond.web.back.AbilityBack</managed-bean-class>
+                <managed-bean-scope>request</managed-bean-scope>
+        </managed-bean>
+
+
+        <managed-bean>
+                <managed-bean-name>userAccountBack</managed-bean-name>
+                <managed-bean-class>cz.cvut.x33eja.macosond.web.back.UserAccountBack</managed-bean-class>
+                <managed-bean-scope>request</managed-bean-scope>
+        </managed-bean>
+
+    <navigation-rule>
+        <from-view-id>/member/bandAdd.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>list</from-outcome>
+            <to-view-id>/member/bandList.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/member/bandEdit.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>list</from-outcome>
+            <to-view-id>/member/bandList.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/member/bandList.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>edit</from-outcome>
+            <to-view-id>/member/bandEdit.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>add</from-outcome>
+            <to-view-id>/member/bandAdd.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/member/eventEdit.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>list</from-outcome>
+            <to-view-id>/member/eventList.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/member/eventList.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>edit</from-outcome>
+            <to-view-id>/member/eventEdit.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>add</from-outcome>
+            <to-view-id>/member/eventAdd.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/member/eventAdd.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>list</from-outcome>
+            <to-view-id>/member/eventList.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/member/musicianAdd.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>list</from-outcome>
+            <to-view-id>/member/musicianList.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/member/musicianEdit.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>list</from-outcome>
+            <to-view-id>/member/musicianList.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/member/musicianList.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>edit</from-outcome>
+            <to-view-id>/member/musicianEdit.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>add</from-outcome>
+            <to-view-id>/member/musicianAdd.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/member/genreAdd.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>list</from-outcome>
+            <to-view-id>/member/genreList.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/member/genreEdit.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>list</from-outcome>
+            <to-view-id>/member/genreList.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/member/genreList.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>edit</from-outcome>
+            <to-view-id>/member/genreEdit.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>add</from-outcome>
+            <to-view-id>/member/genreAdd.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/common/headerCore.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>home</from-outcome>
+            <to-view-id>/index.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>
+
+
+
+
+
+
+
+
